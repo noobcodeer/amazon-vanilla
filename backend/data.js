@@ -9,7 +9,8 @@ export default {
       brand: 'Hiskywin',
       rating: 4.5,
       numReviews: 10,
-      countInStock: 6,
+      countInStock: 4,
+      Description:'Very Good',
     },
     {
       _id: '2',
@@ -19,7 +20,9 @@ export default {
       price: 70,
       brand: 'Nike',
       rating: 5,
+      countInStock: 4,
       numReviews: 51,
+      Description:'Very Good',
     },
     {
       _id: '3',
@@ -29,7 +32,9 @@ export default {
       price: 59,
       brand: 'Adidas',
       rating: 4,
+      countInStock: 8,
       numReviews: 45,
+      Description:'Very Good',
     },
     {
       _id: '4',
@@ -41,6 +46,7 @@ export default {
       rating: 2.5,
       numReviews: 198,
       countInStock: 6,
+      Description:'Very Good',
     },
     {
       _id: '5',
@@ -52,6 +58,7 @@ export default {
       rating: 3.5,
       numReviews: 89,
       countInStock: 6,
+      Description:'Very Good',
     },
     {
       _id: '6',
@@ -63,6 +70,7 @@ export default {
       rating: 4.5,
       numReviews: 45,
       countInStock: 6,
+      Description:'Very Good',
     },
   ],
 };
