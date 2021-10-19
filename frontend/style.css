@@ -102,7 +102,12 @@ footer {
 .rating .text-review{
   color:#000;
 }
-
+.success{
+  color:#55a82f;
+}
+.error{
+  color:red;
+}
 
 /* CSS PRODUCTSCREEN UI */
 .product__screen{
@@ -117,16 +122,19 @@ footer {
   height:50px;
   margin-left: 12px;
   border-radius: 10px;
+  margin-top:10px;
 }
 .product__screen-back-header:hover{
   background-color: #c76421;
   color:#fff;
 }
-.product__screen-back-header h1{
+.product__screen-back-header a{
   color:#fff;
   font-size: 16px;
-  text-align: center;
+  display: flex;
+  margin:auto 10px;
   padding-top:16px;
+  cursor: pointer;
 }
 .product__screen-main{
   display:flex;
@@ -165,13 +173,14 @@ footer {
   border: 1px solid #000;
   border-radius: 6px;
   margin:20px;
+  padding:10px;
   background-color: #e0ce26;
   color:#fff;
+  text-align: center;
+  cursor: pointer;
 }
 .product-buy-container-add-card:hover{
   background-color:#e98d4f;
   color:#000;
 }
-.product-buy-container-add-card p{
-  text-align: center;
-}
+

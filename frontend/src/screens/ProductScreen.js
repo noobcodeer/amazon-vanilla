@@ -3,6 +3,13 @@ import {getProduct} from '../api';
 import Rating from '../components/Rating';
 
 const ProductScreen = {
+  after_render: () =>{
+    const request= parseRequestUrl()
+    const addCart= document.getElementById('add-cart');
+    addCart.addEventListener('click',()=>{
+      document.location.hash=`/cart/${request.id}`
+    })
+  },
   render: async () => {
     const request = parseRequestUrl();
     const product = await getProduct(request.id);
@@ -13,7 +20,7 @@ const ProductScreen = {
     <div class='product__screen'>
       <div class='product__screen-back'>
         <div class='product__screen-back-header'>
-          <h1>Back to Result</h1>
+          <a href='/#/'>Back to Result</a>
         </div>
       </div>
       <div class='product__screen-main'>
@@ -54,8 +61,8 @@ const ProductScreen = {
               } </p>
             </div>
             <div class='product-buy-container-add'>
-              <div class='product-buy-container-add-card'>
-                <p>Add to Cart</p>
+              <div id='add-cart' class='product-buy-container-add-card'>
+                Add to Cart
               </div>
             </div>
         </div>
