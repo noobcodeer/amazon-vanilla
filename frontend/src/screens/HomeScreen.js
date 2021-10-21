@@ -2,7 +2,6 @@
 import axios from 'axios';
 import Rating from '../components/Rating';
 
-
 const HomeScreen = {
   render: async () => {
     const response = await axios({
