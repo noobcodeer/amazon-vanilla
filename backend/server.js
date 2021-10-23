@@ -1,7 +1,15 @@
 import cors from 'cors';
 import express from 'express';
+import mongoose from 'mongoose';
 import data from './data';
 
+mongoose.connect(config.MONGODB_URL,{
+  useNewUrlParser :true,
+  useUnifiedTopology:true,
+  useCreateIndex: true,
+}).catch((error)=>{
+  console.log(error.reason);
+})
 const app = express();
 app.use(cors());
 app.get('/api/products', (req, res) => {

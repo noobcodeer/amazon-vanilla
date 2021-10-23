@@ -9,7 +9,7 @@ export default {
       brand: 'Hiskywin',
       rating: 4.5,
       numReviews: 10,
-      countInStock: 4,
+      countInStock: 10,
       Description:'Very Good',
     },
     {
